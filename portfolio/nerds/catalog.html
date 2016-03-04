@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NERD'S - Каталог</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,100&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/symbols/css/symbols-nerds.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../css/style-inner.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/epchela">View on GitHub</a>
+
+          <h1 id="project_title">Evgeniy P</h1>
+          <h2 id="project_tagline"><a href="../../index.html">Portfolio</a></h2>
+          <!-- <h2 id="project_tagline">Portfolio</h2> -->
+        </header>
+    </div>
+
+    <header class="main-header">
+      <div class="container clearfix">
+        <div class="menu">
+          <div class="logo">
+            <a href="index.html"><img src="img/logo.png" width="139" height="56" alt="Нёрдс"/></a>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li>
+                <a href="index.html">Студия</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li class="active">
+                <a href="catalog.html">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="basket">
+            <a href="#">Корзина</a>
+          </div>
+        </div>
+        <div class="title-header">
+          <h1>Добро пожаловать в магазин готовых макетов</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+<!-- форма - фильтр -->
+      <div class="container clearfix">
+        <div class="content-filter">
+          <form action="index.html" method="post">
+            <fieldset>
+              <legend><h3>Стоимость:</h3></legend>
+              <!-- <input type="range" name="range" value=""> -->
+              <!-- временный вариант статичное изображение -->
+              <!-- <img src="img/temp/filter-cost.png" width="240" height="132" alt="" /> -->
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale"> <div style="width: 70%;" class="bar"></div> </div>
+                  <div class="toggle min-toggle"></div>
+                  <div class="toggle max-toggle"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="text" name="min-price" value="0">
+                  </label>
+                  <label class="max-price" >
+                    до <input type="text" name="max-price" value="15000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><h3>Сетка:</h3></legend>
+              <ul>
+                <li>
+                  <input type="radio" id="radio-1" name="radio" checked>
+                  <label for="radio-1">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" id="radio-2" name="radio">
+                  <label for="radio-2">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" id="radio-3" name="radio">
+                  <label for="radio-3">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend><h3>Особенности:</h3></legend>
+              <ul>
+                <li>
+                  <input type="checkbox" id="checkbox-1" name="checkbox">
+                  <label for="checkbox-1">Слайдер</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox-2" name="checkbox">
+                  <label for="checkbox-2">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox-3" name="checkbox">
+                  <label for="checkbox-3">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox-4" name="checkbox">
+                  <label for="checkbox-4">Галерея</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox-5" name="checkbox">
+                  <label for="checkbox-5">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+        </div>
+
+        <!-- каталог -->
+        <div class="content-catalog">
+          <div class="sort">
+            <ul>
+              <li>
+                <span>Сортировать:</span>
+              </li>
+              <li>
+                <a href="#">По цене</a>
+              </li>
+              <li>
+                <a href="#">По типу</a>
+              </li>
+              <li>
+                <a href="#">По функционалу</a>
+              </li>
+              <li class="arrow">
+                <a href="#" class="arrow-up"></a>
+                <a href="#" class="arrow-down"></a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="describe">
+            <h3>Sunset</h3>
+            <p>
+              Интернет магазин с личным кабинетом
+            </p>
+            <a href="#" class="btn">10 000 Р.</a>
+          </div>
+
+          <div class="items">
+            <a href="#" class="items-item"> <!-- TODO ССЫЛКАМИ -->
+              <img src="img/catalog-1.jpg" width="240" height="240" alt="товар" />
+            </a>
+            <a href="#" class="items-item">
+              <img src="img/catalog-2.jpg" width="240" height="240" alt="товар" />
+            </a>
+            <a href="#" class="items-item">
+              <img src="img/catalog-3.jpg" width="240" height="240" alt="товар" />
+            </a>
+            <a href="#" class="items-item">
+              <img src="img/catalog-4.jpg" width="240" height="240" alt="товар" />
+            </a>
+            <a href="#" class="items-item">
+              <img src="img/catalog-5.jpg" width="240" height="240" alt="товар" />
+            </a>
+            <a href="#" class="items-item">
+              <img src="img/catalog-6.jpg" width="240" height="240" alt="товар" />
+            </a>
+          </div>
+          <div class="paginator">
+            <!-- <a class="prev disabled" href="#prev">Назад</a> -->
+            <a href="#1" class="current">1</a>
+            <a href="#2">2</a>
+            <a href="#3">3</a>
+            <a class="next" href="#next">Следующая</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="main-footer container">
+      <div class="block-map">
+<!--
+  TODO сделать интерактивную карту гуггл/яндекс.
+  Временный статичный вариант карта - изображение.
+ -->
+        <div class="map">
+          <!-- <img src="img/map.png" alt="карта адреса" /> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d704.7691442032176!2d38.94441284962153!3d45.04366788536426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04f1371a61747%3A0xb65bcfa78a9cfddd!2z0YPQuy4g0JLQvtC70L7QtNC4INCT0L7Qu9C-0LLQsNGC0L7Qs9C-LCAxMDAsINCa0YDQsNGB0L3QvtC00LDRgCwg0JrRgNCw0YHQvdC-0LTQsNGA0YHQutC40Lkg0LrRgNCw0LksIDM1MDAwNA!5e0!3m2!1sru!2sru!4v1455845659243" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="contacts">
+          <p><span>NЁRDS</span> DESIGN STUDIO</p>
+          <p>
+            350000, Краснодар,<br>
+            ул. Головатого, 100
+          </p>
+          <p>тел. +7 (861) 275-75-75</p>
+          <a href="#" class="btn btn-popup">Напишите нам</a>
+        </div>
+      </div>
+      <div class="social">
+        <div class="social-vk">
+          <a href="#">VK</a>
+        </div>
+        <div class="social-fb">
+          <a href="#">FB</a>
+        </div>
+        <div class="social-insta">
+          <a href="#">INSTA</a>
+        </div>
+        <div class="social-title">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>
+            Скидка 10% для друзей из социальных сетей.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Всплывающая форма отзыва -->
+    <div class="modal-content">
+      <form class="write-form" action="index.html" method="post">
+        <div class="line-1">
+          <label class="name-form">
+            Ваше имя:<br>
+            <input type="text" name="name" placeholder="Представтесь, пожалуйста" required>
+          </label>
+          <label class="email-form">
+            Ваш e-mail:<br>
+            <input type="email" name="email" placeholder="Для отправки ответа" required>
+          </label>
+        </div>
+        <label class="text-form">
+          Текст письма:<br>
+          <textarea name="text" rows="4"  placeholder="В свободной форме" required></textarea>
+        </label>
+        <input class="btn" type="submit" name="send" value="Отправить">
+        <input class="btn btn-close" type="button" name="cancel" value="Отмена">
+      </form>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer clearfix">
+      <footer class="inner">
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    <script src="js/script.js" charset="utf-8"></script>
+
+  </body>
+</html>
