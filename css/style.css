@@ -435,6 +435,15 @@ My style changes
   clear: both;
 }
 
+header.inner h2 a {
+  color: #fff;
+  transition: 200ms ease-in;
+}
+
+header.inner h2 a:hover {
+  color: #0090ff;
+}
+
 .content-item .item {
   float: left;
 }

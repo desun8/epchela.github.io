@@ -6,20 +6,19 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:600,300,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- GitHub --> <link rel="stylesheet" type="text/css" media="screen" href="../../css/style-inner.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="../../css/style-inner.css">
   </head>
   <body>
 
-    <!-- HEADER -->
+    <!-- HEADER GitHub -->
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/epchela">View on GitHub</a>
 
           <h1 id="project_title">Evgeniy P</h1>
-          <h2 id="project_tagline"><a href="../../index.html">Portfolio</a></h2>
-          <!-- <h2 id="project_tagline">Portfolio</h2> -->
+          <h2 id="project_tagline"><a href="http://epchela.github.io">My portfolio</a></h2>
+
         </header>
     </div>
 
@@ -29,13 +28,12 @@
           <div class="wrapper">
             <ul>
               <li>
-                <a href="index.html"  class="logo">Техномарт</a>
+                <a href="index.html" class="logo">Техномарт</a>
               </li>
               <li>
                 <form class="form-search" action="index.html" method="post">
-                  <!-- <i class="icon-search"></i> -->
                   <input type="search" name="search" placeholder="Поиск:" class="search">
-                  <label></label>
+                  <label class="search-icon"></label>
                 </form>
               </li>
               <li class="bookmark">
@@ -68,7 +66,13 @@
                 <a href="#" class="btn btn-reg">Регистрация</a>
               </div>
               <div class="user-profile">
-<!-- TODO: кнопка профиля, когда пользователь зашел на сайт -->
+                <!-- TODO: кнопка профиля, когда пользователь зашел на сайт -->
+                <div class="user-profile__block">
+                  <a href="#" title="Личный кабинет" class="block__link block__link--profile-enter"><i class="icon-user"></i><span class="js-user-name">Равшан Джамшутович</span></a>
+                  <a href="#" title="Выход" class="block__link block__link--logout"><i class="icon-logout"></i></a>
+                </div>
+                <a href="#" class="user-profile__link">Мои заказы</a>
+                <a href="#" class="user-profile__link">Личный кабинет</a>
               </div>
             </div>
           </div>
@@ -121,11 +125,11 @@
               <div class="top-slider-slides">
                 <div class="top-slider-item">
                   <img src="img/slider-top-1.jpg" alt="" width="620" height="266">
-                  <a href="" class="btn">Открыть каталог</a>
+                  <a href="catalog.html" class="btn">Открыть каталог</a>
                 </div>
                 <div class="top-slider-item">
                   <img src="img/slider-top-2.jpg" alt="" width="620" height="266">
-                  <a href="" class="btn">Открыть каталог</a>
+                  <a href="catalog.html" class="btn">Открыть каталог</a>
                 </div>
               </div>
             </div>
@@ -156,7 +160,7 @@
               </div>
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <span>25500</span>
-              <a href="" class="btn">18900</a>
+              <a href="#" class="btn">18900</a>
             </div>
             <div class="pop-item">
               <div class="pop-item-head">
@@ -168,7 +172,7 @@
               </div>
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <span>25500</span>
-              <a href="" class="btn">18900</a>
+              <a href="#" class="btn">18900</a>
             </div>
             <div class="pop-item">
               <div class="pop-item-head">
@@ -180,7 +184,7 @@
               </div>
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <span>25500</span>
-              <a href="" class="btn">18900</a>
+              <a href="#" class="btn">18900</a>
             </div>
             <div class="pop-item">
               <div class="pop-item-head">
@@ -192,14 +196,14 @@
               </div>
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <!-- <span>25500</span> -->
-              <a href="" class="btn">18900</a>
+              <a href="#" class="btn">18900</a>
             </div>
           </div>
 
           <div class="pop-content-2 clearfix">
             <div class="pop-title">
               <h2>Популярные производители:</h2>
-              <a href="" class="btn">Все производители</a>
+              <a href="#" class="btn">Все производители</a>
             </div>
             <div class="pop-item"><a href="#"><img src="img/item-comp-1.jpg" alt="BOSCH"></a></div>
             <div class="pop-item"><a href="#"><img src="img/item-comp-2.jpg" alt="BOSCH"></a></div>
@@ -277,13 +281,13 @@
                 <li>Автотрейдинг</li>
                 <li>ЖелДорЭкспедиция</li>
               </ul>
-              <a href="" class="btn">Подробнее о компании</a>
+              <a href="#" class="btn">Подробнее о компании</a>
             </div>
             <div class="about-right-column">
               <h2>КОНТАКТЫ</h2>
               <p>Вы можете забрать товар сами, <br> заехав в наш офис:</p>
               <div class="map"><img src="img/map.jpg" alt=""></div>
-              <a href="" class="btn">Заблудились? НапиШИТЕ НАМ!</a>
+              <a href="#" class="btn btn-popup">Заблудились? НапиШИТЕ НАМ!</a>
             </div>
           </div>
         </div>
@@ -327,9 +331,9 @@
                 </p>
               </div>
               <div class="social">
-                <a href="" class="social-btn"><i class="icon-vk social-icon"></i></a>
-                <a href="" class="social-btn"><i class="icon-facebook social-icon"></i></a>
-                <a href="" class="social-btn"><i class="icon-instagramm social-icon"></i></a>
+                <a href="#" class="social-btn"><i class="icon-vk social-icon"></i></a>
+                <a href="#" class="social-btn"><i class="icon-facebook social-icon"></i></a>
+                <a href="#" class="social-btn"><i class="icon-instagramm social-icon"></i></a>
               </div>
               <div class="contacts">
                 <div class="left-column">
@@ -367,12 +371,25 @@
         </div>
       </div>
 
-      <!-- FOOTER  -->
+      <div class="pop-cart">
+        <div class="pop-cart__text">
+          <h2>Товар добавлен в корзину!</h2>
+        </div>
+        <div class="pop-cart__btn">
+          <!-- FIXME: кнопка должна вести на страницу оформления заказа => сделать ссылкой -->
+          <button type="button" name="button" class="pop-btn pop-btn--order"><a href="link"></a>Оформить заказ</button>
+          <button type="button" name="button" class="pop-btn pop-btn--close">Продолжить покупки</button>
+        </div>
+      </div>
+
+      <!-- FOOTER GitHub  -->
       <div id="footer_wrap" class="outer clearfix">
         <footer class="inner">
           <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
         </footer>
       </div>
+
+  <script src="js/script.js"></script>
 
   </body>
 </html>
