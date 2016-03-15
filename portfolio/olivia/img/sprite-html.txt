@@ -1,0 +1,9 @@
+<i class="sprite sprite-appstore"></i>
+<i class="sprite sprite-email-icon"></i>
+<i class="sprite sprite-full_hover"></i>
+<i class="sprite sprite-full_n"></i>
+<i class="sprite sprite-gooplay"></i>
+<i class="sprite sprite-image_g"></i>
+<i class="sprite sprite-image_g_hover"></i>
+<i class="sprite sprite-listen_hover"></i>
+<i class="sprite sprite-listen_n"></i>

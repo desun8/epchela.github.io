@@ -1,0 +1,59 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-appstore {
+    width: 165px;
+    height: 51px;
+    background-position: -10px -10px;
+}
+
+.sprite-email-icon {
+    width: 31px;
+    height: 24px;
+    background-position: -195px -10px;
+}
+
+.sprite-full_hover {
+    width: 128px;
+    height: 128px;
+    background-position: -246px -10px;
+}
+
+.sprite-full_n {
+    width: 128px;
+    height: 128px;
+    background-position: -10px -158px;
+}
+
+.sprite-gooplay {
+    width: 176px;
+    height: 47px;
+    background-position: -158px -158px;
+}
+
+.sprite-image_g {
+    width: 129px;
+    height: 129px;
+    background-position: -158px -225px;
+}
+
+.sprite-image_g_hover {
+    width: 129px;
+    height: 129px;
+    background-position: -394px -10px;
+}
+
+.sprite-listen_hover {
+    width: 128px;
+    height: 128px;
+    background-position: -354px -159px;
+}
+
+.sprite-listen_n {
+    width: 128px;
+    height: 128px;
+    background-position: -10px -307px;
+}
