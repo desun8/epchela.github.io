@@ -1230,6 +1230,7 @@ Full-width styles
   box-shadow: 0 0 15px #333;
 
   font-size: 30px;
+  transition: 200ms;
 }
 .arrow-to-top a {
   color: #333;
