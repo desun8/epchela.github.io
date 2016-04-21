@@ -6,9 +6,11 @@
   <title>NERD'S - Каталог</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,100&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/symbols/css/symbols-nerds.css">
-  <link rel="stylesheet" href="css/normalize-min.css">
-  <!-- GitHub --> <link rel="stylesheet" type="text/css" media="screen" href="../../css/style-inner-min.css">
-  <link rel="stylesheet" href="css/style-min.css">
+
+  <!-- GitHub -->
+  <link rel="stylesheet" type="text/css" media="screen" href="../../css/style-inner-min.css">
+
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -28,18 +30,18 @@
     <div class="container clearfix">
       <div class="menu">
         <div class="logo">
-          <a href="index.html"><img src="img/logo.png" width="139" height="56" alt="Нёрдс" /></a>
+          <a href="index.min.html"><img src="img/logo.png" width="139" height="56" alt="Нёрдс" /></a>
         </div>
         <nav class="main-nav">
           <ul>
             <li>
-              <a href="index.html">Студия</a>
+              <a href="index.min.html">Студия</a>
             </li>
             <li>
               <a href="#">Клиенты</a>
             </li>
             <li class="active">
-              <a href="catalog.html">Магазин</a>
+              <a href="catalog.min.html">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -60,32 +62,25 @@
     <!-- форма - фильтр -->
     <div class="container clearfix">
       <div class="content-filter">
-        <form action="index.html" method="post">
+        <form action="index.min.html" method="post">
           <fieldset>
             <legend>
               <h3>Стоимость:</h3></legend>
-            <!-- <input type="range" name="range" value=""> -->
-            <!-- временный вариант статичное изображение -->
-            <!-- <img src="img/temp/filter-cost.png" width="240" height="132" alt="" /> -->
-            <div class="range-filter">
-              <div class="range-controls">
-                <div class="scale">
-                  <div style="width: 70%;" class="bar"></div>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div  id="slider"></div>
                 </div>
-                <div class="toggle min-toggle"></div>
-                <div class="toggle max-toggle"></div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от
+                    <input type="text" name="min-price" id="minCost" value="0">
+                  </label>
+                  <label class="max-price">
+                    до
+                    <input type="text" name="max-price" id="maxCost" value="15000">
+                  </label>
+                </div>
               </div>
-              <div class="price-controls">
-                <label class="min-price">
-                  от
-                  <input type="text" name="min-price" value="0">
-                </label>
-                <label class="max-price">
-                  до
-                  <input type="text" name="max-price" value="15000">
-                </label>
-              </div>
-            </div>
           </fieldset>
           <fieldset>
             <legend>
@@ -313,7 +308,7 @@
   </footer>
   <!-- Всплывающая форма отзыва -->
   <div class="modal-content">
-    <form class="write-form" action="index.html" method="post">
+    <form class="write-form" action="index.min.html" method="post">
       <div class="line-1">
         <label class="name-form">
           Ваше имя:
@@ -343,6 +338,9 @@
     </footer>
   </div>
 
+  <script src="js/jquery-1.6.1.min.js" charset="utf-8"></script>
+  <script src="js/jquery.ui-slider.js" charset="utf-8"></script>
+  <script src="js/slider.js" charset="utf-8"></script>
   <script src="js/script.js" charset="utf-8"></script>
   <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
       async defer></script>

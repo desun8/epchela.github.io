@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <title>Sedona - небольшой городок в Аризоне</title>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <!-- GitHub --> <link rel="stylesheet" type="text/css" media="screen" href="../../css/style-inner.css">
+
+    <!-- GitHub -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../../css/style-inner.css">
+
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -28,19 +30,19 @@
         <nav class="main-nav">
           <ul>
             <li>
-              <a href="index.html">ИНФОРМАЦИЯ</a>
+              <a href="index.min.html">ИНФОРМАЦИЯ</a>
             </li>
             <li>
               <a href="#">ФОТО И ВИДЕО</a>
             </li>
             <li class="logo">
-              <a href="index.html"><img src="img/logo.png" alt="логотип" width="138" height="70"/></a>
+              <a href="index.min.html"><img src="img/logo.png" alt="логотип" width="138" height="70"/></a>
             </li>
             <li>
               <a href="#">КАРТА ШТАТА</a>
             </li>
             <li>
-              <a href="hotels.html" class="active">ГОСТИНИЦЫ</a>
+              <a href="hotels.min.html" class="active">ГОСТИНИЦЫ</a>
             </li>
           </ul>
         </nav>
@@ -50,7 +52,7 @@
       <main class="main-index clearfix">
 
         <div class="index-header">
-          <form class="filter-hotels container-index" action="index.html" method="post">
+          <form class="filter-hotels container-index" action="index.min.html" method="post">
 
             <fieldset>
               <legend>Инфраструктура</legend>
@@ -93,16 +95,14 @@
               <div class="range-filter">
                 <div class="price-controls">
                   <label class="min-price">
-                    от <input type="text" name="min-price" value="0" class="price">
+                    от <input type="text" name="min-price" value="0" class="price" id="minCost">
                   </label>
                   <label class="max-price" >
-                    до <input type="text" name="max-price" value="15000" class="price">
+                    до <input type="text" name="max-price" value="15000" class="price" id="maxCost">
                   </label>
                 </div>
                 <div class="range-controls">
-                  <div class="scale"> <div style="width: 70%;" class="bar"></div> </div>
-                  <div class="toggle min-toggle"></div>
-                  <div class="toggle max-toggle"></div>
+                  <div id="slider"></div>
                 </div>
               </div>
             </fieldset>
@@ -239,5 +239,9 @@
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
+
+    <script src="js/jquery-1.6.1.min.js"></script>
+    <script src="js/jquery.ui-slider.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

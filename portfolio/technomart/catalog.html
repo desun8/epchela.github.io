@@ -6,9 +6,11 @@
   <title>Техномарт</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:600,300,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/normalize.css">
-  <!-- GitHub --> <link rel="stylesheet" type="text/css" media="screen" href="../../css/style-inner.css">
-  <link rel="stylesheet" href="css/style.css">
+
+  <!-- GitHub -->
+  <link rel="stylesheet" type="text/css" media="screen" href="../../css/style-inner.css">
+
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -19,7 +21,7 @@
         <a id="forkme_banner" href="https://github.com/epchela">View on GitHub</a>
 
         <h1 id="project_title">Evgeniy P</h1>
-        <h2 id="project_tagline"><a href="index.html">My portfolio</a></h2>
+        <h2 id="project_tagline"><a href="index.min.html">My portfolio</a></h2>
 
       </header>
   </div>
@@ -30,10 +32,10 @@
       <div class="wrapper">
         <ul>
           <li>
-            <a href="index.html" class="logo">Техномарт</a>
+            <a href="index.min.html" class="logo">Техномарт</a>
           </li>
           <li>
-            <form class="form-search" action="index.html" method="post">
+            <form class="form-search" action="index.min.html" method="post">
               <input type="search" name="search" placeholder="Поиск:" class="search">
               <label class="search-icon"></label>
             </form>
@@ -83,9 +85,9 @@
     <div class="bottom-menu clearfix">
       <div class="wrapper">
         <ul class="main-menu">
-          <li><a href="index.html">Главная</a></li>
+          <li><a href="index.min.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="catalog.min.html">Каталог</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Спецпредложения</a></li>
           <li><a href="#">Доставка</a></li>
@@ -100,8 +102,8 @@
     <div class="wrapper clearfix">
 
       <ul class="breadcrumbs">
-        <li><a href="index.html"><i class="icon-home"></i></a></li>
-        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="index.min.html"><i class="icon-home"></i></a></li>
+        <li><a href="catalog.min.html">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
         <li class="breadcrumbs__current">Перфораторы</li>
       </ul>
@@ -126,23 +128,19 @@
       <!-- </div> -->
 
       <div class="filter-content clearfix">
-        <form class="filter-content__form" action="index.html" method="post">
+        <form class="filter-content__form" action="index.min.html" method="post">
           <fieldset class="filter filter--range">
             <legend>Цена: <i class="icon-down filter-arrow filter-arrow--down" id="js-arrow-down_1"></i><i class="icon-up filter-arrow filter-arrow--up" id="js-arrow-up_1"></i></legend>
             <div class="filter__range js-filter-1">
               <div class="scale-controls">
-                <div class="scale-controls__scale">
-                  <div style="width: 80%;" class="scale-controls__scale--bar"></div>
-                </div>
-                <div class="scale-controls__toggle scale-controls__toggle--min"></div>
-                <div class="scale-controls__toggle scale-controls__toggle--max"></div>
+                <div id="slider"></div>
               </div>
               <div class="price-controls">
                 <label class="price-controls__price price-controls__price--min">
-                  <input type="text" name="min-price" value="0">
+                  <input type="text" name="min-price" value="0" id="minCost">
                 </label>
                 <label class="price-controls__price price-controls__price--max">
-                  <input type="text" name="max-price" value="15 000">
+                  <input type="text" name="max-price" value="15 000" id="maxCost">
                 </label>
               </div>
             </div>
@@ -325,7 +323,7 @@
       <div class="wrapper">
         <div class="menu-footer">
           <div class="footer-left-column">
-            <a href="index.html" class="logo">ТЕХНОМАРТ</a>
+            <a href="index.min.html" class="logo">ТЕХНОМАРТ</a>
             <p>
               г. Москва, ул. Строителей, 15
               <br> +7 (495) 555-05-55
@@ -335,7 +333,7 @@
             <ul class="footer-menu-top">
               <li><a href="#">Компания</a></li>
               <li><a href="#">Новости</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="catalog.min.html">Каталог</a></li>
               <li><a href="#">Доставка</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
@@ -382,7 +380,7 @@
 
   <div class="pop-up">
     <div class="pop-up-content">
-      <form action="index.html" method="post" id="write-us">
+      <form action="index.min.html" method="post" id="write-us">
         <label for="name" class="column-left">Ваше имя:
           <input type="text" name="name" placeholder="Представтесь, пожалуйста" required>
         </label>
@@ -420,6 +418,9 @@
     </footer>
   </div>
 
+  <script src="js/jquery-1.6.1.min.js"></script>
+  <script src="js/jquery.ui-slider.js"></script>
+  <script src="js/slider.js"></script>
   <script src="js/script.js"></script>
 
 </body>
