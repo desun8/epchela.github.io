@@ -957,6 +957,9 @@ a {
 .page-footer_triangle svg {
   width: 100%;
 }
+.page-footer .logo {
+  width: 30%;
+}
 .page-footer .social {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1006,6 +1009,8 @@ a {
 .page-footer_copyright {
   position: relative;
   padding-bottom: 30px;
+  width: 30%;
+  text-align: right;
 }
 /*text-transform: uppercase;*/
 .page-footer_copyright a {
