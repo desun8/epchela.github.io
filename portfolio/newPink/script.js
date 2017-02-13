@@ -214,7 +214,7 @@ function initMap() {
   var address = { lat: 59.936352, lng: 30.32109699999999 },
       addressDeskt = { lat: 59.936955, lng: 30.32109699999999 },
       map = void 0,
-      image = 'img/_mapMarker.png';
+      image = 'img/mapMarker.png';
 
   if (window.matchMedia("(max-width: 950px)").matches) {
     map = new google.maps.Map(document.getElementById('map'), {
