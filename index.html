@@ -1,73 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Evgeniy</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header id="mainHeader" class="page-header">
+  <h1 class="page-header__logo"><a href="epchela.github.io">Evgeniy P</a></h1>
+  <div class="page-header__close"></div>
+</header>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Epchela.GitHub.io : EvgPch&#39;s portfolio">
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
 
-    <title>Evgeniy P - portfolio</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/epchela">View on GitHub</a>
-
-          <h1 id="project_title">Evgeniy P</h1>
-          <h2 id="project_tagline"><a href="index.html">My portfolio</a></h2>
-
-        </header>
+	<main class="page-main">
+  <a href="examples/pink/"><img src="img/pink.jpg" alt="Макет Pink" srcset="img/pink@2.jpg 2x"></a>
+  <a href="examples/sedona/"><img src="img/sedona.jpg" alt="Макет Sedona" srcset="img/sedona@2.jpg 2x"></a>
+  <a href="examples/application/"><img src="img/application.jpg" alt="Макет Application Landing Page" srcset="img/application@2.jpg 2x"></a>
+</main>
+    <footer class="page-footer">
+  <div class="wrap">
+    <div class="social"></div>
+    <div class="copyright">
+      <span>Published with </span><a href="https://pages.github.com/">GitHub Pages</a>
     </div>
+  </div>
+</footer>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer ">
-      <main id="main_content" class="inner">
+    <script>
+      (function () {
+        var touch = 'ontouchstart' in document.documentElement || navigator.MaxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
 
-        <div class="content-item clearfix">
+        if (touch) {
+          // remove all :hover stylesheets
+          try {
+            // prevent exception on browsers not supporting DOM styleSheets properly
+            for (var si in document.styleSheets) {
+              var styleSheet = document.styleSheets[si];
+              if (!styleSheet.rules) continue;
 
-          <div class="item">
-            <a href="portfolio/alisayed/index.html"><img src="img/prev-alisayed.jpg" alt="Макет" width="400"></a>
-          </div>
+              for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+                if (!styleSheet.rules[ri].selectorText) continue;
 
-          <div class="item">
-            <a href="portfolio/mogo/index.html"><img src="img/prev-mogo.jpg" alt="Макет" width="400"></a>
-          </div>
-
-          <div class="item">
-            <a href="portfolio/olivia/index.html"><img src="img/prev-olivia.jpg" alt="Макет" width="400"></a>
-          </div>
-
-          <div class="item">
-            <a href="portfolio/technomart/index.min.html"><img src="img/prev-technomart.jpg" alt="Макет" width="400"></a>
-          </div>
-
-          <div class="item">
-            <a href="portfolio/sedona/index.min.html"><img src="img/prev-sedona.jpg" alt="Макет" width="400"></a>
-          </div>
-
-          <div class="item">
-            <a href="portfolio/nerds/index.min.html"><img src="img/prev-nerds.jpg" alt="Макет" width="400"></a>
-          </div>
-
-        </div>
-
-      </main>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer clearfix">
-      <footer class="inner">
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-
-
-  </body>
+                if (styleSheet.rules[ri].selectorText.match(':hover')) {
+                  styleSheet.deleteRule(ri);
+                }
+              }
+            }
+          } catch (ex) {}
+        }
+      })();
+    </script>
+</body>
 </html>

@@ -1,0 +1,42 @@
+.gh-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background-color: #2196f3;
+  z-index: 1000;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+}
+.gh-header a {
+  position: absolute;
+  top: 50%;
+  right: 4.101563%;
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: translate3d(0,-50%,0);
+  transform: translate3d(0,-50%,0);
+  color: #f5f5f5;
+  font-size: 0;
+  text-align: center;
+}
+.gh-header a:hover svg {
+  fill: #333;
+}
+.gh-header a svg {
+  width: 20px;
+  height: 20px;
+  fill: #f5f5f5;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate3d(0,-50%,0);
+  transform: translate3d(0,-50%,0);
+
+  -webkit-transition: all 230ms ease-in;
+  transition: all 230ms ease-in;
+}
+.gh-header-space {
+  -webkit-transform: translate3d(0,40px,0);
+  transform: translate3d(0,40px,0);
+}
