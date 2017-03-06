@@ -356,7 +356,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.inputCustom label, .page-nav, .page-nav_menu, .page-nav_menu li:after, .page-main a, .page-main a img {
+.inputCustom label, .page-header__logo a, .page-header__logo a:after, .page-nav, .page-nav_menu, .page-nav_menu li:after, .page-main a, .page-main a img {
   -webkit-transition: all 230ms ease-in;
   transition: all 230ms ease-in;
 }
@@ -489,7 +489,25 @@ a:hover {
   letter-spacing: normal;
 }
 .page-header__logo a {
+  position: relative;
   color: inherit;
+}
+.page-header__logo a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: #F5F5F5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+}
+.page-header__logo a:hover {
+  text-decoration: none;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+.page-header__logo a:hover:after {
+  width: 100%;
 }
 /*.gh-header {*/
 /*position: fixed;*/
