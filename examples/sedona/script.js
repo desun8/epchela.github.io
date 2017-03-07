@@ -5729,7 +5729,7 @@
 
   pageNav.addEventListener('click', function (e) {
     console.log(e.target);
-    var close = [menuClose, menuClose.childNodes[1], menuClose.childNodes[1].childNodes[1]];
+    var close = [menuClose, menuClose.childNodes[0], menuClose.childNodes[0].childNodes[0]];
     // menu.style.transition = 'all 600ms';
     // pageNav.style.transition = 'all 800ms';
     if (e.target == menuOpen) {
@@ -5748,7 +5748,7 @@
 
 // Disable inline svg for IE
 (function () {
-  let sryButUUseIE = document.querySelectorAll('.ieHidden'),
+  var sryButUUseIE = document.querySelectorAll('.ieHidden'),
       def = window.clientInformation.userAgent;
 
   sryButUUseIE = Array.prototype.slice.call(sryButUUseIE);
