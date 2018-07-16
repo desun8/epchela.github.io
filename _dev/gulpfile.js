@@ -38,7 +38,7 @@ gulp.task('fileinclude', function() {
       basepath: '@file'
     }))
     .pipe(rename( (path) => path.basename = 'index' ))
-    .pipe(gulp.dest('build/'));
+    .pipe(gulp.dest('../'));
 });
 
 gulp.task('css', function () {
@@ -57,7 +57,7 @@ gulp.task('css', function () {
 	]) )
 	.pipe( sourcemaps.write('.') )
 	.pipe(rename('style.css'))
-	.pipe( gulp.dest('build/') );
+	.pipe( gulp.dest('../') );
 });
 
 
@@ -66,7 +66,7 @@ gulp.task('svgMin', function () {
     .pipe(svgmin({
       js2svg: {pretty: true}
     }))
-    .pipe(gulp.dest('build/img/'));
+    .pipe(gulp.dest('../img/'));
 });
 
 gulp.task('svgSprite', function () {
@@ -93,13 +93,13 @@ gulp.task('svgSprite', function () {
         }
       }
     }))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('../img'));
 });
 
 gulp.task('imgMin', function () {
   return gulp.src('src/img/**/*.{jpeg,jpg,png}')
     .pipe(imagemin())
-    .pipe(gulp.dest('build/img/'))
+    .pipe(gulp.dest('../img/'))
 });
 
 gulp.task("js", function () {
@@ -108,7 +108,8 @@ gulp.task("js", function () {
     .pipe(babel())
     // .pipe(concat("script.js"))
     .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("build/"));
+    .pipe(gulp.dest("../"));
 });
 
 gulp.task('default', ['watch', 'serve']);
+gulp.task('build', ['fileinclude', 'css']);
