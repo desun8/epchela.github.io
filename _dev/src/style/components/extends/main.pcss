@@ -1,0 +1,52 @@
+@define-placeholder ulUnstyled {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+%flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+%titleSm {
+  width: 256px;
+  padding: 45px;
+}
+
+
+@define-placeholder center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@define-placeholder animation {
+  transition: all 230ms ease-in;
+}
+
+@define-placeholder fixBlur {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transform: translate3d(0,0,0);
+}
+
+@define-placeholder wrap {
+  width: 660px;
+  margin: 0 auto;
+  /*padding: 0 10px;*/
+}
+
+%wrapTablet {
+  width: 100%;
+  padding-right: 5.714285714286%;
+  padding-left: 5.714285714286%;
+  margin: 0;
+}
+
+%wrapMobile {
+   padding: 0 6.25%;
+ }

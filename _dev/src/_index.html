@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Evgeniy</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	@@include('_header.html')
+	@@include('_main.html')
+    @@include('_footer.html')
+
+    <script>
+      (function () {
+        var touch = 'ontouchstart' in document.documentElement || navigator.MaxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+
+        if (touch) {
+          // remove all :hover stylesheets
+          try {
+            // prevent exception on browsers not supporting DOM styleSheets properly
+            for (var si in document.styleSheets) {
+              var styleSheet = document.styleSheets[si];
+              if (!styleSheet.rules) continue;
+
+              for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+                if (!styleSheet.rules[ri].selectorText) continue;
+
+                if (styleSheet.rules[ri].selectorText.match(':hover')) {
+                  styleSheet.deleteRule(ri);
+                }
+              }
+            }
+          } catch (ex) {}
+        }
+      })();
+    </script>
+</body>
+</html>
