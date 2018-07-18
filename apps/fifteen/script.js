@@ -15,24 +15,18 @@ drawBoard();
 
 
 div.addEventListener('click', function (e) {
+  let target = +e.target.textContent;
+  let table = document.querySelector('.fifteen');
 
-let target = +e.target.textContent;
-let table = document.querySelector('.fifteen');
-
-
-console.log(target);
-
-if (search(target)) {
-  div.removeChild(table);
-  drawBoard();
-}
-
+  if (search(target)) {
+    div.removeChild(table);
+    drawBoard();
+  }
 });
 
 function makeBoard() {
   let size = d*d,
   num = size - 1;
-
 
   for (let i = 0; i < size; i++) {
     let temp = [];
