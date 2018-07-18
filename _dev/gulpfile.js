@@ -20,15 +20,15 @@ const gulp = require('gulp'),
 gulp.task('watch', function() {
   gulp.watch('src/**/*.html', ['fileinclude']);
   gulp.watch('src/style/**/*.{pcss,css}', ['css']);
-  gulp.watch('src/script/own/**/*.js', ['js']);
+  gulp.watch('src/script/**/*.js', ['js']);
 });
 
 gulp.task('serve', function () {
   browserSync.init({
-    server: 'build'
+    server: '../'
   });
 
-  browserSync.watch('build/**/*.*', browserSync.reload);
+  browserSync.watch('../**/*.*', browserSync.reload);
 });
 
 gulp.task('fileinclude', function() {
@@ -103,7 +103,7 @@ gulp.task('imgMin', function () {
 });
 
 gulp.task("js", function () {
-  return gulp.src("src/script/own/**/*.js")
+  return gulp.src("src/script/**/*.js")
     .pipe(sourcemaps.init())
     .pipe(babel())
     // .pipe(concat("script.js"))

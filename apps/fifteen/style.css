@@ -1,0 +1,41 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  width: 660px;
+  margin: 0 auto;
+  padding-top: 40px !important;
+}
+
+.fifteen {
+  width: 400px;
+  height: 400px;
+  border: 5px solid brown;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 24px;
+}
+
+td {
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+@media (max-width: 660px) {
+  .wrap {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .fifteen {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 300px) {
+  .fifteen {
+    width: 200px;
+    height: 200px;
+  }
+}
